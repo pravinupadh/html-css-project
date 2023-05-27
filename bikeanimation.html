@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .bike{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            /* left: -400px; */
+            animation: bike 10s linear infinite;
+
+            
+        }
+        .road{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        @keyframes bike{
+            0%{
+            transform: translateX(0)
+            }
+            
+            100%{
+                transform: translateX(80vh);
+            }
+            /* 0%{
+                transform: rotateX(120deg);
+            } */
+        }
+        
+        .bike1{
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div >
+        <img class="road" src="/road1.jpeg" alt="">
+    </div>
+    <div class="bike1">
+        <img class="bike" src="/bike.jpg" alt="">
+    </div>
+</body>
+</html>

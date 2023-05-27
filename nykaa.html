@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYKAA</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: rgb(236, 232, 239);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 90px;
+        }
+
+        .content {
+            list-style: none;
+            display: flex;
+
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: rgb(46, 44, 44);
+            font-size: 18px;
+            display: block;
+        }
+
+        a:hover {
+            color: rgb(241, 53, 241);
+        }
+
+        .makeup,
+        .skin {
+            position: absolute;
+            top: 70px;
+            display: none;
+            width: 900px;
+            background-color: rgb(235, 238, 240);
+            padding-left: 0;
+            padding: 10px;
+        }
+
+        li.dropdown {
+            /* position: relative */
+        }
+
+        li.dropdown:hover .makeup,
+        li.dropdown:hover .skin {
+            display: flex;
+        }
+
+        div.makeup1 {
+             padding-left: 0%;
+        }
+        .makeup1:nth-child(2n) {
+            background-color: antiquewhite;
+        }
+        .content>li>a {
+            padding: 20px 0px;
+            
+        }
+        .background{
+            background-image: url("/image1.JPG");
+            width: 80%;
+            height: 40vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        h1{
+            background-color: rgba(0, 255, 255, 0.812);
+            filter: drop-shadow();
+            box-shadow: ;
+            width: 250px;
+        }
+        img.back{
+            width: 200px;
+            border: 4px solid rgb(0, 0, 0);
+            position: relative;
+            left: 20%;
+           /* box-shadow: 3px 6px 6px 4px red; */
+           filter: drop-shadow(30px 6px 60px red);
+        }
+        input{
+            margin-top: 15px;
+            margin-left: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <a href=""><img src="/Nykaa_Logo.png" alt=""></a>
+        </div>
+        <div>
+            <ul class="content">
+                <li class="dropdown"><a href="">Makeup</a>
+                    <div class="makeup">
+                        <div class="makeup1">
+                            <b><a href="">Face</a></b>
+                            <a href="">Face Primer</a>
+                            <a href="">Concealer</a>
+                            <a href="">Foundation</a>
+                            <a href="">Compact</a>
+                            <a href="">Contour</a>
+                            <a href="">Loose Powder</a>
+                            <a href="">Tinted Moisturizer</a>
+                            <a href="">Blush</a>
+                            <a href="">Bronzer</a>
+                            <a href="">BB & CC Cream</a>
+                            <a href="">Highlighters</a>
+                            <a href="">Setting Spray</a>
+                            <a href="">Makeup Remover</a>
+                            <a href="">Sindoor</a>
+                        </div>
+                        <div class="makeup1">
+                            <b><a href="">Eyes</a></b>
+                            <a href="">Kajal</a>
+                            <a href="">Eyeliner</a>
+                            <a href="">Mascara</a>
+                            <a href="">Eye Shadow</a>
+                            <a href="">Eye Brown Enhancers</a>
+                            <a href="">Eye Primer</a>
+                            <a href="">False Eyelashes</a>
+                            <a href="">Eye Makeup Remover</a>
+                            <a href="">Under Eye Concealer</a>
+                            <a href="">Contact Lenses</a> <br>
+                            <b><a href="">Makeup Kits & Combos</a></b>
+                            <a href="">Makeup Kits</a>
+                            <a href="">Makeup Combos</a>
+
+                        </div>
+                        <div class="makeup1">
+                            <b><a href="">Lips</a></b>
+                            <a href="">Lipstick</a>
+                            <a href="">Liquid Lipstick</a>
+                            <a href="">Lip Crayon</a>
+                            <a href="">Lip Gloss</a>
+                            <a href="">Lip Liner</a>
+                            <a href="">Lip Plumper</a>
+                            <a href="">Lip Stain</a> <br>
+                            <b><a href="">Nails</a></b>
+                            <a href="">Nail Polish</a>
+                            <a href="">Nail Art Kits</a>
+                            <a href="">Nail Care</a>
+                            <a href="">Nail Polish Remover</a>
+                        </div>
+                        <div class="makeup1">
+                            <b><a href="">Tools & Brushes</a></b>
+                            <a href="">Face Brush</a>
+                            <a href="">Eye Brush</a>
+                            <a href="">Lip Brush</a>
+                            <a href="">Brush sets</a>
+                            <a href="">Brush cleaners</a>
+                            <a href="">Sponges & Applicators</a>
+                            <a href="">Eyelash curlers</a>
+                            <a href="">Tweezers</a>
+                            <a href="">Sharpness</a>
+                            <a href="">Mirrors</a>
+                            <a href="">Makeup Pouches</a>
+                        </div>
+                        <div class="makeup1">
+                            <b><a href="">Top Brands</a></b>
+                            <a href="">Kay Beauty</a>
+                            <a href="">Huda Beauty</a>
+                            <a href="">Charlotte Tibury</a>
+                            <a href="">M.A.C.</a>
+                            <a href="">Maybelline New</a>
+                            <a href="">York</a>
+                            <a href="">L'Oreal Paris</a>
+                            <a href="">Lakme</a>
+                            <a href="">Nykaa Cosmetics</a>
+                            <a href="">Nyx Pro Makeup</a>
+                        </div>
+                        <div class="makeup1">
+                            <b><a href="">Quick Links</a></b>
+                            <a href="">Combos @ Nykaa</a>
+                            <a href="">New Launches</a>
+                            <a href="">NFBA Nominees 2022</a>
+                            <a href="">Gift @ Nykaa</a>
+                            <a href="">The Gift Store</a> <br>
+                            <b><a href="">Trending Searches</a></b>
+                            <a href="">Nude Lipstick</a>
+                            <a href="">Matte Lipstick</a>
+                            <a href="">Red Lipstick</a>
+                            <a href="">Pink Lipstick</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="">Skin</a>
+                    <div class="skin">
+                        <div class="skin1">
+                            <b><a href="">Moisturizers</a></b>
+                            <a href="">Face Moisturizer & Day</a>
+                            <a href="">Cream</a>
+                            <a href="">Night Cream</a>
+                            <a href="">Face oils</a>
+                            <a href="">Serums & Essence</a>
+                            <a href="">All Purpose Gel/Creams</a> <br>
+                            <b><a href="">cleaners</a></b>
+                            <a href="">Face Wash</a>
+                            <a href="">Cleanser</a>
+                            <a href="">Micellar Water</a>
+                            <a href="">Face wipes</a>
+                            <a href="">Makeup Remover</a>
+                            <a href="">Scrub & Exfoliators</a>
+                        </div>
+                        <div class="skin1">
+                            <b><a href="">Trending Seraches</a></b>
+                            <a href="">Toners under 1000</a>
+                            <a href="">Face was oily skin</a>
+                            <a href="">Oil Free face</a>
+                            <a href="">Moisturizers</a>
+                            <a href="">Lip Balm Under 500</a>
+                            <a href="">Vitamin C Serum</a> <br>
+                            <b><a href="">Masks</a></b><br>
+                            <a href="">Sheet Masks</a>
+                            <a href="">Sleeping Masks</a>
+                            <a href="">Masks & Peels</a>
+                            <a href="">Face Packs</a>
+                            <a href="">Face Bleach</a><br>
+                            <b><a href="">Toners</a></b>
+                            <a href="">Toners & Mists</a>
+                            <a href="">Rose water</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Hair</a></li>
+                <li><a href="">Appliances</a></li>
+                <li><a href="">Bath & Body</a></li>
+                <li><a href="">Natural</a></li>
+                <li><a href="">Mom & Baby</a></li>
+                <li><a href="">Health & Wellness</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Fragrance</a></li>
+                <li><a href="">Pop Ups</a></li>
+                <li class="search"> <input type="search" placeholder="Search Here"></li>
+            </ul>
+           
+            <!-- <div>
+                Search : <input type="text">
+            </div> -->
+        </div>
+        
+    </header>
+    
+<div class="background">
+    <h1>Welcome</h1>
+</div> <br>
+<img class="back" src="/img5.jpg" alt="">
+</body>
+
+</html>

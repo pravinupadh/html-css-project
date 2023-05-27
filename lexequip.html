@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexequipe</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-image: linear-gradient(rgb(166, 207, 242), rgb(196, 196, 242), rgb(188, 240, 172)); */
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgb(247, 244, 242);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-left: 40px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        div.banner {
+            background-image: url("/lexy.jpeg");
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            position: relative;
+        }
+
+        div.banner>h1 {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            font-size: 42px;
+            word-spacing: 5px;
+            letter-spacing: 1px;
+        }
+
+        div.banner>h3 {
+            color: rgb(231, 137, 30);
+            position: absolute;
+            top: 55%;
+            left: 30%;
+            font-size: 18px;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+        }
+
+        div.content {
+            width: 60%;
+            float: left; 
+            box-sizing: border-box;
+            margin-top: 30px;
+            padding-left: 50px;
+        }
+
+        div.content>h2 {
+            font-size: 36px;
+
+        }
+
+        div.content>p {
+            text-align: justify;
+            word-spacing: 5px;
+            line-height: 30px;
+            font-size: 22px;
+            color: rgb(103, 110, 110);
+        }
+
+        .globe {
+            width: 30%;
+            float: right;
+            box-sizing: border-box;
+            margin-top: 60px;
+           
+        }
+        img.globe1{
+            width: 350px;
+            height: auto;
+            animation: globe 60s linear infinite;
+            margin-right: 40px;
+
+        }
+
+        @keyframes globe {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/lexequipelogo .png" alt="">
+        </div>
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">KNOWLEDGE HUB</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <h1>EXPERT CORPORATE ADVISORY</h1>
+        <H3>At "Lex Equipe" we are commited to helpngg our clients succedd</H3>
+    </div>
+    <div class="content">
+        <h2>Lex Equippe</h2> <br>
+        <p>Lex Equipe is an Indian based secretarial and legal firm established to provide superior quality, knowledge
+            based, effective, business oriented corporate legal services to its clients. Founded on best international
+            practices, coupled with strong capabilities and experience of its members, Lex Equipe provides comprehensive
+            corporate legal services and solutions to a broad spectrum of domestic and foreign clients, ranging from
+            start-up companies to multinational corporations.
+
+            Our members have substantial expertise in their practice areas and in-depth sector specific understanding
+            and knowledge to provide customized and highly effective legal advise best suited to the clients’ business
+            needs, be it simple or complex multiparty transaction.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus, illo architecto maiores
+            pariatur deleniti repudiandae perspiciatis odit perferendis cupiditate magnam distinctio optio tenetur
+            voluptatibus accusantium quo quam vel dignissimos reiciendis quia? Libero nemo esse ipsa nesciunt
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis assumenda maxime in at odio sint, soluta
+            facere neque, officiis corporis autem consequuntur ex nobis recusandae. Incidunt possimus, iste optio
+            tenetur velit, harum magni unde nostrum quis libero tempore excepturi maxime illo eligendi veniam quaerat
+            sint. Maiores officia similique libero iure.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dicta minus eaque! Sunt quaerat, ipsa
+            voluptate ratione fugit, laboriosam fugiat reprehenderit impedit magnam ducimus quibusdam molestias eius
+            autem repellat officiis sapiente! Facilis, quia quidem tenetur illo doloribus deleniti fugiat mollitia
+            obcaecati officiis, veritatis nulla. Libero minima eum ipsa veritatis saepe commodi, voluptate quibusdam.
+            Rerum praesentium, fugiat, laboriosam amet enim atque magnam ex tempore dolores voluptate suscipit, ea
+            doloribus vero quos?
+        </p>
+    </div>
+    <div class="globe">
+        <img  class="globe1" src="/globle3d.png" alt="">
+    </div>
+</body>
+
+</html>

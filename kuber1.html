@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        header {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(123, 179, 227);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(21, 20, 20);
+            margin-left: 20px;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        div.company {
+            width: 30%;
+        }
+
+        div.menu {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .banner {
+            background-image: url("/img3.jpg");
+            width: 70%;
+            height: 100vh;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 15%;
+        }
+       /* a:link {
+            color: brown;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: greenyellow;
+        }
+
+        p::first-line {
+            color: hotpink;
+        }
+        li.dropdown{
+            position: relative;
+        }*/
+        li.dropdown>ul.drop-content{
+            position: absolute;
+            width: 100px;
+            background-color: rgb(123, 179, 227);
+            list-style: none;
+            padding: 10px;
+            top: 28px;
+            display: none;
+        }
+        ul.drop-content{
+            border-bottom: 2px solid wheat;
+            margin-bottom: 10px;    
+        }
+        li.dropdown:hover .drop-content{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="company">
+            <a href="">Company Logo</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li class="dropdown"><a href="">Products</a>
+                    <ul class="drop-content">
+                        <li><a href="">Grocery</a></li>
+                        <li><a href="">Bakery</a></li>
+                        <li><a href="">Laundry</a></li>
+                        <li><a href="">Stationary</a></li>
+                        <li><a href="">Kitchen</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Home Delivery</a></li>
+                <li><a href="">Contact US</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <div class="banner">
+
+    </div>
+    <a href="/classwork2.html" target="_blank">Click Here</a>
+    <a href="/Classwork.html" target="_blank">DO NOT TOUCH</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui officiis assumenda alias atque officia, similique
+        necessitatibus? Nihil magnam amet veritatis eligendi nesciunt maxime provident pariatur dolorum sunt dolorem
+        voluptates culpa sit magni obcaecati quae laboriosam doloremque, minus ex qui. Alias quam tempora ipsum? Labore
+        minima possimus voluptatibus quidem quas ullam dignissimos aut dolore reprehenderit? Alias quisquam quam
+        praesentium eaque. Minima quae accusantium illum non in. Fugit magni ex corporis dolorum iusto animi doloribus
+        facilis, vitae est necessitatibus, quisquam voluptates. Exercitationem ipsam nisi nesciunt a architecto corrupti
+        soluta. Ullam dolorem, enim maxime repellendus totam quas ipsa quod amet harum. Placeat, veniam voluptatum
+        maiores dolorem odio veritatis nesciunt. Voluptate laudantium libero hic, ex omnis tenetur exercitationem
+        dolorem alias ipsa ipsum, eligendi accusamus! Impedit suscipit nesciunt recusandae quaerat ad aut eius quis
+        doloremque. Sapiente, eligendi. Ea quasi aperiam perspiciatis mollitia ipsa voluptatibus molestias
+        reprehenderit, soluta dicta veritatis consequuntur neque consequatur praesentium expedita at enim? Sunt odit
+        maiores accusamus iure illum doloribus veritatis, quam ducimus debitis eveniet in temporibus repellat rerum
+        magnam architecto enim, neque qui. Debitis ex blanditiis error molestiae tempore fugiat architecto ut, illum in,
+        laborum cupiditate ea sit distinctio. Accusamus vero nam officia, deserunt doloremque ad quasi quaerat placeat
+        magnam rerum.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            margin: 0%;
+            /* background-image: linear-gradient(rgb(221, 117, 117), rgb(216, 176, 68), rgb(107, 125, 228)); */
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        img.globe {
+            width: 300px;
+            position: absolute;
+            top: 700px;
+            left: 900px;
+            animation: globe 50s linear infinite;
+
+        }
+
+        @keyframes globe {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        header {
+            width: 100%;
+            height: 70px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: sticky;
+            
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: black;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .background {
+            background-image: url("/lexy.jpeg");
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            position: relative;
+        }
+
+        H1 {
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            font-size: 55px;
+        }
+
+        h4 {
+            color: rgb(206, 144, 28);
+            position: absolute;
+            top: 60%;
+            left: 35%;
+        }
+        div.content{
+            width: 700px;
+            position: absolute;
+            top: 600px;
+            margin-left: 50px;
+        }
+        div.content>h2{
+            font-size: 35px;
+            color: rgb(58, 56, 56);
+        }
+        div.content>p{
+            text-align: justify;
+            font-size: 21px;
+            font-weight: 100;
+            word-spacing: 2px;
+            line-height: 1.8;
+            color: rgb(82, 80, 80);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/lexequipelogo .png" alt="">
+        </div>
+        <div class="nav">
+            <ul class="navbar">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">KNOWLEDGE HUB</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="background">
+        <h1>EXPERT CORPORATE ADVISORY</h1>
+        <h4>At "Lex Equipe" we are commited to helping out clients succeed</h4>
+    </div>
+    <div>
+        <img class="globe" src="/3d.img" alt="">
+    </div>
+    <div class="content">
+        <h2>Lex Equipe</h2> <br>
+        <p>Lex Equipe is an Indian based secretarial and legal firm established to provide superior quality, knowledge based, effective, business oriented corporate legal services to its clients. Founded on best international practices, coupled with strong capabilities and experience of its members, Lex Equipe provides comprehensive corporate legal services and solutions to a broad spectrum of domestic and foreign clients, ranging from start-up companies to multinational corporations.
+
+            Our members have substantial expertise in their practice areas and in-depth sector specific understanding and knowledge to provide customized and highly effective legal advise best suited to the clients’ business needs, be it simple or complex multiparty transaction.
+
+        </p>
+    </div>
+
+</body>
+
+</html>

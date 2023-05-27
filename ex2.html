@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        header {
+            width: 100%;
+            height: 45px;
+            background-color: rgb(85, 160, 100);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+
+        a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: black;
+
+        }
+
+        ul.navbar {
+            width: 100%;
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        img {
+            width: 80px;
+            align-items: center;
+        }
+
+        li.dropdown {
+            position: relative;
+        }
+
+        li.dropdown>ul.drop-content {
+            position: absolute;
+            width: 150px;
+            list-style: none;
+            background-color: rgb(235, 238, 240);
+            padding-left: 0;
+            padding: 10px;
+            top: 30px;
+            display: none;
+
+        }
+
+        ul.drop-content>li {
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        li.dropdown:hover ul.drop-content {
+            display: block;
+        }
+
+        .cl {
+            position: absolute;
+            top: 30px;
+            display: none;
+            width: 200px;
+            background-color: rgb(235, 238, 240);
+            padding-left: 0;
+            padding: 10px;
+
+
+        }
+
+        #block {
+            width: 200px;
+        }
+
+        .navbar>li>a {
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        div.cl>.cl1>a,
+        .cl2>a {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        li.dropdown1 {
+            position: relative;
+        }
+
+        li.dropdown1:hover .cl {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <a href=""><img src="cb_logo.svg" alt=""></a>
+        </div>
+        <div class="content">
+            <ul class="navbar">
+                <li><a href="">Live Score</a></li>
+                <li><a href="">Schedule</a></li>
+                <li><a href="">Archives</a></li>
+                <li class="dropdown"><a href="">News</a> <i class="fa-solid fa-caret-down"></i>
+                    <ul class="drop-content">
+                        <li><a href="">All Stories</a></li>
+                        <li><a href="">Cricbuzz Plus</a></li>
+                        <li><a href="">Latest news</a></li>
+                        <li><a href="">Topics</a></li>
+                        <li><a href="">Spotlights</a></li>
+                        <li><a href="">Opinions</a></li>
+                        <li><a href="">Special</a></li>
+                        <li><a href="">Stats & Analysis</a></li>
+                        <li><a href="">Interviews</a></li>
+                        <li><a href="">Live Blogs</a></li>
+                        <li><a href="">Harsha Bhogle</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Series</a>
+                    <ul class="drop-content">
+                        <li><a href="">gfhgjhk</a></li>
+                        <li><a href="">Cricbuzz Plus</a></li>
+                        <li><a href="">Latest news</a></li>
+                        <li><a href="">Topics</a></li>
+                        <li><a href="">Spotlights</a></li>
+                        <li><a href="">Opinions</a></li>
+                        <li><a href="">Special</a></li>
+                        <li><a href="">Stats & Analysis</a></li>
+                        <li><a href="">Interviews</a></li>
+                        <li><a href="">Live Blogs</a></li>
+                        <li><a href="">Harsha Bhogle</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown1"><a href="">Teams</a>
+                    <div class="cl">
+                        <div class="cl1">
+                            <b><a href="">Test Teams</a></b>
+                            <a href="">India</a>
+                            <a href="">Afghanitan</a>
+                            <a href="">Ireland</a>
+                            <a href="">Pakistan</a>
+                            <a href="">Sri Lanka</a>
+                            <a href="">Australia</a>
+                            <a href="">Bangladesh</a>
+                            <a href="">England</a>
+                            <a href="">West Indies</a>
+                            <a href="">South Africa</a>
+                            <a href="">New Zeland</a>
+                        </div>
+                        <div class="cl2">
+                            <b><a href="">Associates</a></b>
+                            <a href="">Mylasia</a>
+                            <a href="">Nepal</a>
+                            <a href="">Germany</a>
+                            <a href="">Nambia</a>
+                            <a href="">Denmark</a>
+                            <a href="">Singapore</a>
+                            <a href="">Bangladesh</a>
+                            <a href="">Kuwait</a>
+                            <a href="">Jersey</a>
+                            <a href="">Oman</a>
+                            <a href="">Fisi</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="">Videos</a>
+                    <ul class="drop-content">
+                        <li><a href="">All Videos</a></li>
+                        <li><a href="">Caegories</a></li>
+                        <li><a href="">Play Lists</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="">Ranking</a>
+                    <ul class="drop-content" id="block">
+                        <li><a href="">ICICI Ranking - Men</a></li>
+                        <li><a href="">ICICI Ranking - Women</a></li>
+                    </ul>
+                </li>
+                <li><a href="">More</a></li>
+            </ul>
+
+        </div>
+        <div class="last">
+            <a href=""><i class="fa-solid fa-circle-user"></i></a>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+</body>
+
+</html>

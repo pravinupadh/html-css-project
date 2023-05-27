@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header '
+                'menu main main main right right '
+                'menu footer footer footer footer footer ';
+            gap: 10px;
+            background-color: rgb(226, 43, 183);
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgb(223, 217, 208);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+        /* .grid{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: rgb(226, 43, 183);
+            padding: 10px;
+        }
+        .grid>div {
+            background-color: rgb(223, 217, 208);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px; 
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Grid Layout</h1>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div> <br>
+    <!-- <table border="2px" cellpadding="5px">
+        <thead>
+            <th>Name </th>
+            <th>Class</th>
+            <th>Subject</th>
+            <th>Section</th>
+            <th>12th Stream</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Pravin</td>
+                <td>12th</td>
+                <td>Maths</td>
+                <td>C - III</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+               
+                <td>12th</td>
+                <td>JAVA</td>
+                <td>C - III</td>
+                <td>Science</td>
+            </tr>
+        </tbody>
+    </table> <br>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div> -->
+
+    <br>
+    <img src="/image1.JPG" alt="">
+</body>
+
+
+</html>
